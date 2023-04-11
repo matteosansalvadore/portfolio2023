@@ -6,16 +6,14 @@ import styled from "styled-components";
 
 const MainContainer = styled.div`
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 `;
 
 const BackgroundDiv = styled.div`
   height: 100vh;
-  width: 100%;
-  /* color: #6b7280; */
-  background-color: green;
-  /* position: relative; */
-  color: yellow;
+  background-color: #e5e7eb;
+  margin-left: 300px;
+  padding: 30px;
 `;
 
 export default function MyApp({ Component, pageProps }) {

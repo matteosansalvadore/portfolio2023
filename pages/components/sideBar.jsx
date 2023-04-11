@@ -7,7 +7,7 @@ import { Mail } from "react-feather";
 const Main = styled.div`
   width: 250px;
   height: 100vh;
-  background-color: blue;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -32,7 +32,7 @@ const Job = styled.div`
 `;
 
 const NavItem = styled.a`
-  color: #9ca3af;
+  color: #4b5563;
   text-decoration: none;
   padding: 10px 0;
   display: flex;
