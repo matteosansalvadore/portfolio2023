@@ -7,9 +7,27 @@ import styled from "styled-components";
 const inter = Inter({ subsets: ["latin"] });
 
 const Container = styled.div`
+  padding: 20px;
+  width: 100%;
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
+
+const GridRowLayout = styled.div`
+  width: 100%;
+  display: grid;
   justify-content: space-between;
   gap: 20px;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 `;
 
 const Introduction = styled.div`
@@ -21,9 +39,10 @@ const Introduction = styled.div`
   border-radius: 10px;
   justify-content: center;
   display: flex;
-  padding-left: 30px;
+  padding: 30px;
   flex-direction: column;
-  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 3;
   box-shadow: 0px 2px 5px 1px rgba(199, 201, 204, 0.76);
 `;
 
@@ -41,7 +60,7 @@ const Presentation = styled.h2`
 `;
 
 const ProfileCard = styled.div`
-  width: 300px;
+  width: 100%;
   height: 300px;
   background-color: #ffffff;
   border-radius: 10px;
@@ -177,18 +196,34 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container>
-        <Introduction>
-          <Hey>Hey, I'm Matteo!</Hey>
-          <Presentation>
-            A frontend developer and Amazon seller from Italy.
-          </Presentation>
-        </Introduction>
-        <ProfileCard>
-          <Img src="../FotoMatteo.jpeg"></Img>
-          <Name>Matteo Sansalvadore</Name>
-          <JobTitle>Frontend Developer</JobTitle>
-          <Location>Turin, Italy</Location>
-        </ProfileCard>
+        <GridRowLayout>
+          <Introduction>
+            <Hey>Hey, I'm Matteo!</Hey>
+            <Presentation>
+              A frontend developer and Amazon seller from Italy.
+            </Presentation>
+          </Introduction>
+          <ProfileCard>
+            <Img src="../FotoMatteo.jpeg"></Img>
+            <Name>Matteo Sansalvadore</Name>
+            JobTitle>Frontend Developer</JobTitle>
+            <Location>Turin, Italy</Location>
+          </ProfileCard>
+        </GridRowLayout>
+        <GridRowLayout>
+          <ProfileCard>
+            <Img src="../FotoMatteo.jpeg"></Img>
+            <Name>Matteo Sansalvadore</Name>
+          </ProfileCard>
+          <ProfileCard>
+            <Img src="../FotoMatteo.jpeg"></Img>
+            <Name>Matteo Sansalvadore</Name>
+          </ProfileCard>
+          <ProfileCard>
+            <Img src="../FotoMatteo.jpeg"></Img>
+            <Name>Matteo Sansalvadore</Name>
+          </ProfileCard>
+        </GridRowLayout>
       </Container>
       <Skills>Skills</Skills>
       <SkillsComponent>
