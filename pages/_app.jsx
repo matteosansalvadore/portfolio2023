@@ -5,14 +5,14 @@ import MainDiv from "./components/MainDiv";
 import styled from "styled-components";
 
 const MainContainer = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 100%;
 `;
 
 const BackgroundDiv = styled.div`
-  height: 100vh;
+  height: 100%;
   background-color: #e5e7eb;
-  margin-left: 300px;
+  margin-left: 270px;
   padding: 30px;
 `;
 

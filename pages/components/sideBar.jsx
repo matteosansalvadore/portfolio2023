@@ -10,7 +10,7 @@ const Main = styled.div`
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 20px 0 0 20px;
   position: absolute;
 `;
 
