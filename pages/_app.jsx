@@ -5,7 +5,7 @@ import MainDiv from "./components/MainDiv";
 import styled from "styled-components";
 
 const MainContainer = styled.div`
-  height: 100%;
+  height: auto;
   width: 100%;
 `;
 

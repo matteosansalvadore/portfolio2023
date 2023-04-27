@@ -43,11 +43,18 @@ const NavItem = styled.div`
   & .logo {
     margin-right: 10px;
   }
+
+  & .styledLink {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+  }
 `;
 
-const StyledLink = styled.a`
-  text-decoration: none;
-  color: inherit;
+const MyUl = styled.ul`
+  list-style: none;
+  padding: 0;
 `;
 
 export default function Navbar() {
@@ -57,32 +64,32 @@ export default function Navbar() {
         <Name>Matteo</Name>
         <Name>Sansalvadore</Name>
         <Job>Frontend Developer</Job>
-        <ul>
+        <MyUl>
           <li>
             <NavItem>
               <Home className="logo" />
-              <Link href="/" passHref>
-                <StyledLink>Home</StyledLink>
+              <Link href="/" className="styledLink">
+                Home
               </Link>
             </NavItem>
           </li>
           <li>
             <NavItem>
               <Folder className="logo" />
-              <Link href="/projects" passHref>
-                <StyledLink>Projects</StyledLink>
+              <Link href="/projects" className="styledLink">
+                Projects
               </Link>
             </NavItem>
           </li>
           <li>
             <NavItem>
               <Mail className="logo" />
-              <Link href="/contacts" passHref>
-                <StyledLink>Contacts</StyledLink>
+              <Link href="/contacts" className="styledLink">
+                Contacts
               </Link>
             </NavItem>
           </li>
-        </ul>
+        </MyUl>
       </Main>
     </div>
   );
