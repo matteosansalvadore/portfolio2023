@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Home } from "react-feather";
 import { Folder } from "react-feather";
 import { Mail } from "react-feather";
+import Link from "next/link";
 
 const Main = styled.div`
   width: 250px;
@@ -31,7 +32,7 @@ const Job = styled.div`
   margin: 10px 0;
 `;
 
-const NavItem = styled.a`
+const NavItem = styled.div`
   color: #4b5563;
   text-decoration: none;
   padding: 10px 0;
@@ -44,6 +45,11 @@ const NavItem = styled.a`
   }
 `;
 
+const StyledLink = styled.a`
+  text-decoration: none;
+  color: inherit;
+`;
+
 export default function Navbar() {
   return (
     <div>
@@ -51,18 +57,32 @@ export default function Navbar() {
         <Name>Matteo</Name>
         <Name>Sansalvadore</Name>
         <Job>Frontend Developer</Job>
-        <NavItem href="#">
-          <Home className="logo" />
-          Home Page
-        </NavItem>
-        <NavItem href="#">
-          <Folder className="logo" />
-          Projects
-        </NavItem>
-        <NavItem href="#">
-          <Mail className="logo" />
-          Contacts
-        </NavItem>
+        <ul>
+          <li>
+            <NavItem>
+              <Home className="logo" />
+              <Link href="/" passHref>
+                <StyledLink>Home</StyledLink>
+              </Link>
+            </NavItem>
+          </li>
+          <li>
+            <NavItem>
+              <Folder className="logo" />
+              <Link href="/projects" passHref>
+                <StyledLink>Projects</StyledLink>
+              </Link>
+            </NavItem>
+          </li>
+          <li>
+            <NavItem>
+              <Mail className="logo" />
+              <Link href="/contacts" passHref>
+                <StyledLink>Contacts</StyledLink>
+              </Link>
+            </NavItem>
+          </li>
+        </ul>
       </Main>
     </div>
   );

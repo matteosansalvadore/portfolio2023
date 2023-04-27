@@ -7,7 +7,7 @@ import styled from "styled-components";
 const inter = Inter({ subsets: ["latin"] });
 
 const Container = styled.div`
-  padding: 20px;
+  /* padding: 20px; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -61,7 +61,7 @@ const Presentation = styled.h2`
 
 const ProfileCard = styled.div`
   width: 100%;
-  height: 300px;
+  height: 100%;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0px 3px 4px 1px rgba(199, 201, 204, 0.76);
@@ -195,83 +195,71 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Container>
-        <GridRowLayout>
-          <Introduction>
-            <Hey>Hey, I'm Matteo!</Hey>
-            <Presentation>
-              A frontend developer and Amazon seller from Italy.
-            </Presentation>
-          </Introduction>
-          <ProfileCard>
-            <Img src="../FotoMatteo.jpeg"></Img>
-            <Name>Matteo Sansalvadore</Name>
-            JobTitle>Frontend Developer</JobTitle>
-            <Location>Turin, Italy</Location>
-          </ProfileCard>
-        </GridRowLayout>
-        <GridRowLayout>
-          <ProfileCard>
-            <Img src="../FotoMatteo.jpeg"></Img>
-            <Name>Matteo Sansalvadore</Name>
-          </ProfileCard>
-          <ProfileCard>
-            <Img src="../FotoMatteo.jpeg"></Img>
-            <Name>Matteo Sansalvadore</Name>
-          </ProfileCard>
-          <ProfileCard>
-            <Img src="../FotoMatteo.jpeg"></Img>
-            <Name>Matteo Sansalvadore</Name>
-          </ProfileCard>
-        </GridRowLayout>
-      </Container>
-      <Skills>Skills</Skills>
-      <SkillsComponent>
-        <SkillsBoxes>
-          <SkillsImg src="../Javascript-logo.png"></SkillsImg>
-          <SkillsText>JavaScript (ES6+)</SkillsText>
-        </SkillsBoxes>
-        <SkillsBoxes>
-          <SkillsImg src="../React-icon.png"></SkillsImg>
-          <SkillsText>React</SkillsText>
-        </SkillsBoxes>
-        <SkillsBoxes>
-          <SkillsImg src="../nextjs-icon.svg"></SkillsImg>
-          <SkillsText>NextJs</SkillsText>
-        </SkillsBoxes>
-      </SkillsComponent>
-      <SkillsComponent>
-        <SkillsBoxes>
-          <SkillsImg src="../css.png"></SkillsImg>
-          <SkillsText>CSS</SkillsText>
-        </SkillsBoxes>
-        <SkillsBoxes>
-          <SkillsImg src="../sc.png"></SkillsImg>
-          <SkillsText>Styled Components</SkillsText>
-        </SkillsBoxes>
-        <SkillsBoxes>
-          <SkillsImg src="../Ruby_On_Rails_Logo.png"></SkillsImg>
-          <SkillsText>Ruby on Rails</SkillsText>
-        </SkillsBoxes>
-      </SkillsComponent>
-      <Projects>Projects</Projects>
-      <ProjectsComponent>
-        <ProjectsBoxes>
-          <ProjectsImg src="../forest.jpg"></ProjectsImg>
-          <ProjectTitle>Project Name</ProjectTitle>
-          <ProjectDescription>(React, Css, Javascript)</ProjectDescription>
-        </ProjectsBoxes>
-        <ProjectsBoxes>
-          <ProjectsImg src="../forest.jpg"></ProjectsImg>
-          <ProjectTitle>Project Name</ProjectTitle>
-          <ProjectDescription>(React, Css, Javascript)</ProjectDescription>
-        </ProjectsBoxes>
-        <ProjectsBoxes>
-          <ProjectsImg src="../forest.jpg"></ProjectsImg>
-          <ProjectTitle>Project Name</ProjectTitle>
-          <ProjectDescription>(React, Css, Javascript)</ProjectDescription>
-        </ProjectsBoxes>
-      </ProjectsComponent>
+      <div>
+        <Container>
+          <GridRowLayout>
+            <Introduction>
+              <Hey>Hey, I'm Matteo!</Hey>
+              <Presentation>
+                A frontend developer and Amazon seller from Italy.
+              </Presentation>
+            </Introduction>
+            <ProfileCard>
+              <Img src="../FotoMatteo.jpeg"></Img>
+              <Name>Matteo Sansalvadore</Name>
+              <JobTitle>Frontend Developer</JobTitle>
+              <Location>Turin, Italy</Location>
+            </ProfileCard>
+          </GridRowLayout>
+        </Container>
+        <Skills>Skills</Skills>
+        <SkillsComponent>
+          <SkillsBoxes>
+            <SkillsImg src="../Javascript-logo.png"></SkillsImg>
+            <SkillsText>JavaScript (ES6+)</SkillsText>
+          </SkillsBoxes>
+          <SkillsBoxes>
+            <SkillsImg src="../React-icon.png"></SkillsImg>
+            <SkillsText>React</SkillsText>
+          </SkillsBoxes>
+          <SkillsBoxes>
+            <SkillsImg src="../nextjs-icon.svg"></SkillsImg>
+            <SkillsText>NextJs</SkillsText>
+          </SkillsBoxes>
+        </SkillsComponent>
+        <SkillsComponent>
+          <SkillsBoxes>
+            <SkillsImg src="../css.png"></SkillsImg>
+            <SkillsText>CSS</SkillsText>
+          </SkillsBoxes>
+          <SkillsBoxes>
+            <SkillsImg src="../sc.png"></SkillsImg>
+            <SkillsText>Styled Components</SkillsText>
+          </SkillsBoxes>
+          <SkillsBoxes>
+            <SkillsImg src="../Ruby_On_Rails_Logo.png"></SkillsImg>
+            <SkillsText>Ruby on Rails</SkillsText>
+          </SkillsBoxes>
+        </SkillsComponent>
+        <Projects>Projects</Projects>
+        <ProjectsComponent>
+          <ProjectsBoxes>
+            <ProjectsImg src="../forest.jpg"></ProjectsImg>
+            <ProjectTitle>Project Name</ProjectTitle>
+            <ProjectDescription>(React, Css, Javascript)</ProjectDescription>
+          </ProjectsBoxes>
+          <ProjectsBoxes>
+            <ProjectsImg src="../forest.jpg"></ProjectsImg>
+            <ProjectTitle>Project Name</ProjectTitle>
+            <ProjectDescription>(React, Css, Javascript)</ProjectDescription>
+          </ProjectsBoxes>
+          <ProjectsBoxes>
+            <ProjectsImg src="../forest.jpg"></ProjectsImg>
+            <ProjectTitle>Project Name</ProjectTitle>
+            <ProjectDescription>(React, Css, Javascript)</ProjectDescription>
+          </ProjectsBoxes>
+        </ProjectsComponent>
+      </div>
     </>
   );
 }
