@@ -199,7 +199,7 @@ export default function Home() {
         <Container>
           <GridRowLayout>
             <Introduction>
-              <Hey>Hey, I'm Matteo!</Hey>
+              <Hey>Hey, Im Matteo!</Hey>
               <Presentation>
                 A frontend developer and Amazon seller from Italy.
               </Presentation>
