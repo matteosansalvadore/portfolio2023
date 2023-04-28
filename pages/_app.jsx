@@ -1,7 +1,6 @@
 import "../styles/globals.css";
 import Sidebar from "./components/sideBar";
 import ProfileCard from "./components/profileCard";
-import MainDiv from "./components/MainDiv";
 import styled from "styled-components";
 
 const MainContainer = styled.div`
