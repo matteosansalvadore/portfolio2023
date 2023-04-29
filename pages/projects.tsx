@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "../styles/Home.module.css";
 import styled from "styled-components";
+import { Search } from "react-feather";
 
 const ProjectsName = styled.p`
   font-size: 30px;
@@ -78,7 +79,7 @@ export default function Projects() {
     <Main>
       <HeaderContainer>
         <ProjectsName>Projects</ProjectsName>
-        <SearchBar placeholder="Search Projects"></SearchBar>
+        <SearchBar placeholder="<Search /> Search Projects"></SearchBar>
       </HeaderContainer>
       <ProjectsComponent>
         <ProjectsBoxes>
